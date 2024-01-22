@@ -9,6 +9,9 @@
                 <TableSection Title="Ingrese un nuevo producto">
                     <EntryCell x:Name="Nombre"
                                Placeholder="Nombre"/>
+                    <EntryCell x:Name="Tarea"
+                               Placeholder="Tarea"/>
+
                     <EntryCell x:Name="cantidad"
                                Placeholder="Cantidad"
                                Keyboard="Numeric"/>
