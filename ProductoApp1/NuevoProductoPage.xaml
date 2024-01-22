@@ -11,14 +11,25 @@
                                Placeholder="Nombre"/>
                     <EntryCell x:Name="Tarea"
                                Placeholder="Tarea"/>
-
+                    
                     <EntryCell x:Name="cantidad"
                                Placeholder="Cantidad"
                                Keyboard="Numeric"/>
                     <EntryCell x:Name="Descripcion"
                                Placeholder="Descripción"/>
                 </TableSection>
+                
             </TableRoot>
+                 <Picker x:Name="picker"
+                    Title="Seleccione un estado">
+                     <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Por hacer</x:String>
+                        <x:String>En Progreso</x:String>
+                        <x:String>Finalizado</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
         </TableView>
         <Button Text="Guardar Producto"
                 FontSize="15"
