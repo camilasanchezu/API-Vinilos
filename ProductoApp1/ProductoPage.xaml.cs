@@ -37,6 +37,7 @@ public partial class ProductoPage : ContentPage
        await Navigation.PushAsync(new NuevoProductoPage(_APIService));
     }
 
+
     private async void OnClickShowDetails(object sender, SelectedItemChangedEventArgs e)
     {
         var toast = CommunityToolkit.Maui.Alerts.Toast.Make("Click en ver producto", ToastDuration.Short, 14);
